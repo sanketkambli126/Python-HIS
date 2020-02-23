@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <title>Add policy | Django site admin</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css">
+    <script type="text/javascript" src="/admin/jsi18n/"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/admin/js/urlify.js"></script>
+    <script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
+    <script type="text/javascript" src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+    <script type="text/javascript" src="/static/admin/js/calendar.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css"> -->
+    <!-- <meta name="robots" content="NONE,NOARCHIVE"> -->
+    </head>
+    <body class="app-HIS model-policy change-form" data-admin-utc-offset="0">
+    <div class="breadcrumbs">
+    <!-- <a href="/admin/">Home</a>
+    › <a href="/admin/HIS/">His</a>
+    › <a href="/admin/HIS/policy/">Policys</a>
+    › Add policy -->
+    </div>
+        <!-- Content -->
+        <div id="content" class="colM">
+            <h1>Add policy</h1>
+            <div id="content-main">
+    <form action="" method="post" id="policy_form" novalidate="">
+        <!--<input type="hidden" name="csrfmiddlewaretoken" value="YlKzcSWK2OlZKzpAu8CLnqaW9xSYQArQKXAvKJqzeFUBPHm0wf5halZxxOZSAx7r">-->
+    <!-- <div>
+      <fieldset class="module aligned ">
+            <div class="form-row field-modified_date">
+                    <div>
+                            <label class="required" for="id_modified_date_0">Modified date:</label>
+                                <p class="datetime">
+      Date: <input type="text" name="modified_date_0" class="vDateField" size="10" required="" id="id_modified_date_0"><span class="datetimeshortcuts">&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#" id="calendarlink0"><span class="date-icon" title="Choose a Date"></span></a></span>
+    <br>
+      Time: <input type="text" name="modified_date_1" class="vTimeField" size="8" required="" id="id_modified_date_1"><span class="datetimeshortcuts">&nbsp;<a href="#">Now</a>&nbsp;|&nbsp;<a href="#" id="clocklink0"><span class="clock-icon" title="Choose a Time"></span></a></span>
+    <br><span class="timezonewarning">Note: You are 5.5 hours ahead of server time.</span></p>   
+                    </div>
+            </div> -->
+            <div class="form-row field-is_renewed">
+                    <div class="checkbox-row">
+                            <input type="checkbox" name="is_renewed" id="id_is_renewed"><label class="vCheckboxLabel" for="id_is_renewed">Is renewed</label>
+                    </div>
+            </div>
+            <div class="form-row field-total_amount_canclaim">
+                    <div>
+                            <label class="required" for="id_total_amount_canclaim">Total amount canclaim:</label>
+                                <input type="number" name="total_amount_canclaim" step="0.0001" required="" id="id_total_amount_canclaim">
+                    </div>
+            </div>
+            <div class="form-row field-issued_date">
+                    <div>
+                            <label class="required" for="id_issued_date_0">Issued date:</label>
+                                <p class="datetime">
+      Date: <input type="text" name="issued_date_0" class="vDateField" size="10" required="" id="id_issued_date_0"><span class="datetimeshortcuts">&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#" id="calendarlink1"><span class="date-icon" title="Choose a Date"></span></a></span>
+    <br>
+      Time: <input type="text" name="issued_date_1" class="vTimeField" size="8" required="" id="id_issued_date_1"><span class="datetimeshortcuts">&nbsp;<a href="#">Now</a>&nbsp;|&nbsp;<a href="#" id="clocklink1"><span class="clock-icon" title="Choose a Time"></span></a></span>
+    <br><span class="timezonewarning">Note: You are 5.5 hours ahead of server time.</span></p>
+                    </div>
+            </div>
+            <div class="form-row field-inception_date">
+                    <div>
+                            <label class="required" for="id_inception_date_0">Inception date:</label>
+                                <p class="datetime">
+      Date: <input type="text" name="inception_date_0" class="vDateField" size="10" required="" id="id_inception_date_0"><span class="datetimeshortcuts">&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#" id="calendarlink2"><span class="date-icon" title="Choose a Date"></span></a></span>
+    <br>
+      Time: <input type="text" name="inception_date_1" class="vTimeField" size="8" required="" id="id_inception_date_1"><span class="datetimeshortcuts">&nbsp;<a href="#">Now</a>&nbsp;|&nbsp;<a href="#" id="clocklink2"><span class="clock-icon" title="Choose a Time"></span></a></span>
+    <br><span class="timezonewarning">Note: You are 5.5 hours ahead of server time.</span></p>
+                    </div>
+            </div>
+            <div class="form-row field-expiry_date">
+                    <div>
+                            <label class="required" for="id_expiry_date_0">Expiry date:</label>
+                                <p class="datetime">
+      Date: <input type="text" name="expiry_date_0" class="vDateField" size="10" required="" id="id_expiry_date_0"><span class="datetimeshortcuts">&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#" id="calendarlink3"><span class="date-icon" title="Choose a Date"></span></a></span>
+    <br>
+      Time: <input type="text" name="expiry_date_1" class="vTimeField" size="8" required="" id="id_expiry_date_1"><span class="datetimeshortcuts">&nbsp;<a href="#">Now</a>&nbsp;|&nbsp;<a href="#" id="clocklink3"><span class="clock-icon" title="Choose a Time"></span></a></span>
+    <br><span class="timezonewarning">Note: You are 5.5 hours ahead of server time.</span></p>
+                    </div>
+            </div>
+            <div class="form-row field-plan_id">
+                    <div>
+                            <label class="required" for="id_plan_id">Plan id:</label>
+                                <div class="related-widget-wrapper">
+        <select name="plan_id" required="" id="id_plan_id">
+      <option value="" selected="">---------</option>
+      <option value="1">Plans object (1)</option>
+      <option value="2">Plans object (2)</option>
+      <option value="3">Plans object (3)</option>
+    </select>
+            <a class="related-widget-wrapper-link change-related" id="change_id_plan_id" data-href-template="/admin/HIS/plans/__fk__/change/?_to_field=plan_id&amp;_popup=1" title="Change selected plans"><img src="/static/admin/img/icon-changelink.svg" alt="Change"></a><a class="related-widget-wrapper-link add-related" id="add_id_plan_id" href="/admin/HIS/plans/add/?_to_field=plan_id&amp;_popup=1" title="Add another plans"><img src="/static/admin/img/icon-addlink.svg" alt="Add"></a>
+    </div>
+                    </div>
+            </div>
+            <div class="form-row field-member_id">
+                    <div>
+                            <label class="required" for="id_member_id">Member id:</label>
+                                <div class="related-widget-wrapper">
+        <select name="member_id" required="" id="id_member_id">
+      <option value="" selected="">---------</option>
+      <option value="5">Member object (5)</option>
+      <option value="6">Member object (6)</option>
+    </select>
+            <a class="related-widget-wrapper-link change-related" id="change_id_member_id" data-href-template="/admin/HIS/member/__fk__/change/?_to_field=member_id&amp;_popup=1" title="Change selected member"><img src="/static/admin/img/icon-changelink.svg" alt="Change"></a><a class="related-widget-wrapper-link add-related" id="add_id_member_id" href="/admin/HIS/member/add/?_to_field=member_id&amp;_popup=1" title="Add another member"><img src="/static/admin/img/icon-addlink.svg" alt="Add"></a>
+    </div>
+                    </div>
+            </div>
+    </fieldset>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="submit-row">
+    
+    <input type="submit" value="Save" class="default" name="_save">
+    
+    
+    <input type="submit" value="Save and add another" name="_addanother">
+    <input type="submit" value="Save and continue editing" name="_continue">
+    
+    
+    </div>
+    
+    
+    
+        <script type="text/javascript" id="django-admin-form-add-constants" src="/static/admin/js/change_form.js" data-model-name="policy">
+        </script>
+    
+    
+    
+    
+    <script type="text/javascript" id="django-admin-prepopulated-fields-constants" src="/static/admin/js/prepopulate_init.js" data-prepopulated-fields="[]">
+    </script>
+    
+    
+    </div>
+    </form></div>
+    
+            
+            <br class="clear">
+        </div>
+        <!-- END Content -->
+    
+        <div id="footer"></div>
+    </div>
+    <!-- END Container -->
+    
+    
+    
+    <div class="calendarbox module" id="calendarbox0" style="display: none; position: absolute;"><div><a href="#" class="calendarnav-previous">&lt;</a><a href="#" class="calendarnav-next">&gt;</a></div><div id="calendarin0" class="calendar"><table><caption>February 2020</caption><tbody><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class=""><a href="#">1</a></td></tr><tr><td class=""><a href="#">2</a></td><td class=""><a href="#">3</a></td><td class=""><a href="#">4</a></td><td class=""><a href="#">5</a></td><td class=""><a href="#">6</a></td><td class=""><a href="#">7</a></td><td class="today"><a href="#">8</a></td></tr><tr><td class=""><a href="#">9</a></td><td class=""><a href="#">10</a></td><td class=""><a href="#">11</a></td><td class=""><a href="#">12</a></td><td class=""><a href="#">13</a></td><td class=""><a href="#">14</a></td><td class=""><a href="#">15</a></td></tr><tr><td class=""><a href="#">16</a></td><td class=""><a href="#">17</a></td><td class=""><a href="#">18</a></td><td class=""><a href="#">19</a></td><td class=""><a href="#">20</a></td><td class=""><a href="#">21</a></td><td class=""><a href="#">22</a></td></tr><tr><td class=""><a href="#">23</a></td><td class=""><a href="#">24</a></td><td class=""><a href="#">25</a></td><td class=""><a href="#">26</a></td><td class=""><a href="#">27</a></td><td class=""><a href="#">28</a></td><td class=""><a href="#">29</a></td></tr></tbody></table></div><div class="calendar-shortcuts"><a href="#">Yesterday</a>&nbsp;|&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#">Tomorrow</a></div><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="clockbox module" id="clockbox0" style="display: none; position: absolute;"><h2>Choose a time</h2><ul class="timelist"><li><a href="#">Now</a></li><li><a href="#">Midnight</a></li><li><a href="#">6 a.m.</a></li><li><a href="#">Noon</a></li><li><a href="#">6 p.m.</a></li></ul><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="calendarbox module" id="calendarbox1" style="display: none; position: absolute;"><div><a href="#" class="calendarnav-previous">&lt;</a><a href="#" class="calendarnav-next">&gt;</a></div><div id="calendarin1" class="calendar"><table><caption>February 2020</caption><tbody><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class=""><a href="#">1</a></td></tr><tr><td class=""><a href="#">2</a></td><td class=""><a href="#">3</a></td><td class=""><a href="#">4</a></td><td class=""><a href="#">5</a></td><td class=""><a href="#">6</a></td><td class=""><a href="#">7</a></td><td class="today"><a href="#">8</a></td></tr><tr><td class=""><a href="#">9</a></td><td class=""><a href="#">10</a></td><td class=""><a href="#">11</a></td><td class=""><a href="#">12</a></td><td class=""><a href="#">13</a></td><td class=""><a href="#">14</a></td><td class=""><a href="#">15</a></td></tr><tr><td class=""><a href="#">16</a></td><td class=""><a href="#">17</a></td><td class=""><a href="#">18</a></td><td class=""><a href="#">19</a></td><td class=""><a href="#">20</a></td><td class=""><a href="#">21</a></td><td class=""><a href="#">22</a></td></tr><tr><td class=""><a href="#">23</a></td><td class=""><a href="#">24</a></td><td class=""><a href="#">25</a></td><td class=""><a href="#">26</a></td><td class=""><a href="#">27</a></td><td class=""><a href="#">28</a></td><td class=""><a href="#">29</a></td></tr></tbody></table></div><div class="calendar-shortcuts"><a href="#">Yesterday</a>&nbsp;|&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#">Tomorrow</a></div><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="clockbox module" id="clockbox1" style="display: none; position: absolute;"><h2>Choose a time</h2><ul class="timelist"><li><a href="#">Now</a></li><li><a href="#">Midnight</a></li><li><a href="#">6 a.m.</a></li><li><a href="#">Noon</a></li><li><a href="#">6 p.m.</a></li></ul><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="calendarbox module" id="calendarbox2" style="display: none; position: absolute;"><div><a href="#" class="calendarnav-previous">&lt;</a><a href="#" class="calendarnav-next">&gt;</a></div><div id="calendarin2" class="calendar"><table><caption>February 2020</caption><tbody><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class=""><a href="#">1</a></td></tr><tr><td class=""><a href="#">2</a></td><td class=""><a href="#">3</a></td><td class=""><a href="#">4</a></td><td class=""><a href="#">5</a></td><td class=""><a href="#">6</a></td><td class=""><a href="#">7</a></td><td class="today"><a href="#">8</a></td></tr><tr><td class=""><a href="#">9</a></td><td class=""><a href="#">10</a></td><td class=""><a href="#">11</a></td><td class=""><a href="#">12</a></td><td class=""><a href="#">13</a></td><td class=""><a href="#">14</a></td><td class=""><a href="#">15</a></td></tr><tr><td class=""><a href="#">16</a></td><td class=""><a href="#">17</a></td><td class=""><a href="#">18</a></td><td class=""><a href="#">19</a></td><td class=""><a href="#">20</a></td><td class=""><a href="#">21</a></td><td class=""><a href="#">22</a></td></tr><tr><td class=""><a href="#">23</a></td><td class=""><a href="#">24</a></td><td class=""><a href="#">25</a></td><td class=""><a href="#">26</a></td><td class=""><a href="#">27</a></td><td class=""><a href="#">28</a></td><td class=""><a href="#">29</a></td></tr></tbody></table></div><div class="calendar-shortcuts"><a href="#">Yesterday</a>&nbsp;|&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#">Tomorrow</a></div><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="clockbox module" id="clockbox2" style="display: none; position: absolute;"><h2>Choose a time</h2><ul class="timelist"><li><a href="#">Now</a></li><li><a href="#">Midnight</a></li><li><a href="#">6 a.m.</a></li><li><a href="#">Noon</a></li><li><a href="#">6 p.m.</a></li></ul><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="calendarbox module" id="calendarbox3" style="display: none; position: absolute;"><div><a href="#" class="calendarnav-previous">&lt;</a><a href="#" class="calendarnav-next">&gt;</a></div><div id="calendarin3" class="calendar"><table><caption>February 2020</caption><tbody><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class="nonday"> </td><td class=""><a href="#">1</a></td></tr><tr><td class=""><a href="#">2</a></td><td class=""><a href="#">3</a></td><td class=""><a href="#">4</a></td><td class=""><a href="#">5</a></td><td class=""><a href="#">6</a></td><td class=""><a href="#">7</a></td><td class="today"><a href="#">8</a></td></tr><tr><td class=""><a href="#">9</a></td><td class=""><a href="#">10</a></td><td class=""><a href="#">11</a></td><td class=""><a href="#">12</a></td><td class=""><a href="#">13</a></td><td class=""><a href="#">14</a></td><td class=""><a href="#">15</a></td></tr><tr><td class=""><a href="#">16</a></td><td class=""><a href="#">17</a></td><td class=""><a href="#">18</a></td><td class=""><a href="#">19</a></td><td class=""><a href="#">20</a></td><td class=""><a href="#">21</a></td><td class=""><a href="#">22</a></td></tr><tr><td class=""><a href="#">23</a></td><td class=""><a href="#">24</a></td><td class=""><a href="#">25</a></td><td class=""><a href="#">26</a></td><td class=""><a href="#">27</a></td><td class=""><a href="#">28</a></td><td class=""><a href="#">29</a></td></tr></tbody></table></div><div class="calendar-shortcuts"><a href="#">Yesterday</a>&nbsp;|&nbsp;<a href="#">Today</a>&nbsp;|&nbsp;<a href="#">Tomorrow</a></div><p class="calendar-cancel"><a href="#">Cancel</a></p></div><div class="clockbox module" id="clockbox3" style="display: none; position: absolute;"><h2>Choose a time</h2><ul class="timelist"><li><a href="#">Now</a></li><li><a href="#">Midnight</a></li><li><a href="#">6 a.m.</a></li><li><a href="#">Noon</a></li><li><a href="#">6 p.m.</a></li></ul><p class="calendar-cancel"><a href="#">Cancel</a></p></div></body></html>
